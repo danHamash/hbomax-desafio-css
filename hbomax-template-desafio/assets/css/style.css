@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+body{
+background-color: var(--primary-color);
+color: #fff;
+}
+:root{
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    height: 54px;
+    width: 100%;
+    position:fixed;
+    z-index: 2;
+  }
+  .nav-inscrever{
+    background: var(--tertiary-color);
+    border-radius: 500px;
+    border: none;
+    height: 30px;
+    width: 160px;
+    margin: 0 2rem;
+    padding: 8px 26px;
+  }
+  .nav-inscrever:hover{
+    background: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    transition: 1s;
+  }
+  .item, .nav-inscrever{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: .8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .item-01{
+    margin-left: 2rem;
+    width: 160px;
+    height: 26px;
+  }
+  .item-02{
+    font-weight: 700;
+  }
+  .header-container{
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    animation: header-background 9s ease infinite alternate;
+    background-size: 400% 400%;
+    padding: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header__marca{
+    display: flex;
+  }
+  .header__container div, p{
+    padding-bottom: 40px;
+  }
+  .header__title{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .header__title span{
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .underline{
+    display: flex;
+    background: var(--divider-bg-color);
+    width: 600px;
+    height: 4px;
+    border-radius: 17px;
+    padding: 0;
+  }
+  .assinatura{
+    font-family: "Quicksand";
+    margin-top: 3rem;
+    padding:.2rem;
+    font-size: 1.2rem;
+  }
+  .assinatura__preco{
+    font-weight:bold;
+    font-size: 2.5rem;
+  }
+  .mes{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left:.5rem ;
+  }
+  .btn-assinatura{
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-color);
+    height: 51px;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 500px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+  .btn-gradiant{
+    transition: background 1s, outline 1s, transform 1s;
+    animation: bt-animation 2s infinite;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+  }
+  .btn-assinatura:hover{
+    background-color: transparent;
+    background-position: 100%;
+    outline: 1px solid var(--secondary-color);
+    transform: scale(1.05);
+  }
+.assinatura-anual{
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.card-container{
+  display: flex;
+  gap: 50px;
+}
+.plano-card{
+  background-image: url(/hbomax-template-desafio/assets/images/background-movies-series.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.plano-title{
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+.plano-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.assinatura-card{
+margin-top: 3rem;
+max-width: 600px;
+background: var(--card-bg-color);
+border-radius: 9px;
+padding: 40px 60px;
+}
+.card-info-descricao::marker {
+  content: "+";
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+.card-offer{
+display: flex;
+justify-content: space-between;
+}
+.card-info{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 1rem;
+}
+.card-info li{
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  max-height: 500px;
+}
+.card-info-buy{
+  transition: background 1s, outline 1s, transform 1s;
+  background: var(--btn-bg-color-gradient);
+  background-size: 250%;
+}
+.btn-card-info{
+  margin-top: 16rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.valor{
+  font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.products-content img{
+  width: 350px;
+}
+
+.products-content{
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+.content-title{
+  font-size: 2rem;
+  margin: 6rem 0 2rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+.products-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.product {
+  position: relative;
+  width: 350px; 
+}
+
+.default-img, .hover-img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.hover-img {
+  cursor: pointer;
+  transition: opacity 2s;
+  opacity: 0;
+  position: absolute;
+}
+
+.product:hover .hover-img {
+  opacity: 1;
+}
+
+.product:hover .default-img {
+  opacity: 0;
+}
+.footer-container{
+  text-align: center;
+}
+.footer-list{
+  display: flex;
+  justify-content:center;
+  list-style: none;
+}
+.footer-list li a{
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-list li a:hover{
+  color: var(--btn-link-bg-color);
+  font-weight: bold;
+  transition: 1s;
+}
+.footer-list li{
+  margin: 10rem 1rem 1rem 3rem; 
+}
+.direitos{
+  color: var(--link-color);
+  font-size: .7rem;
+  text-align: center;
+} 
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+  
+  
+
+
+
+
+
+
+
+@keyframes background{
+0% {
+  transform: opacity .9;
+}
+10%{
+  transform: opacity .7;
+}
+20%{
+  transform: opacity .5;
+}
+}
+
+@keyframes bt-animation{
+  0%, 10% {
+    transform: rotate(0);
+}
+15% {
+    transform: rotate(-15deg);
+}
+20% {
+    transform: rotate(10deg);
+}
+25% {
+    transform: rotate(-10deg);
+}
+30% {
+    transform: rotate(10deg);
+}
+35% {
+    transform: rotate(-10deg);
+}
+40%, 100% {
+    transform: rotate(0);
+}
+}
+@keyframes header-background{
+
+
+  0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
