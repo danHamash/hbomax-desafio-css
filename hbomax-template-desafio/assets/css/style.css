@@ -160,7 +160,6 @@ color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 500px;
-    margin-bottom: 40px;
     letter-spacing: 3px;
     cursor: pointer;
   }
@@ -184,6 +183,7 @@ color: #fff;
 .card-container{
   display: flex;
   gap: 50px;
+  padding: 1rem;
 }
 .plano-card{
   background-image: url(/hbomax-template-desafio/assets/images/background-movies-series.png);
@@ -203,10 +203,11 @@ color: #fff;
 }
 .assinatura-card{
 margin-top: 3rem;
-max-width: 600px;
+width: 100%;
+height: 100%;
 background: var(--card-bg-color);
 border-radius: 9px;
-padding: 40px 60px;
+padding: 10px 20px;
 }
 .card-info-descricao::marker {
   content: "+";
@@ -237,9 +238,9 @@ justify-content: space-between;
 }
 .btn-card-info{
   margin-top: 16rem;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .valor{
   font-size: 2rem;
@@ -391,7 +392,7 @@ align-items: center;
   
 
 
-@media screen and (min-width:320px) and (max-width:600px){
+@media screen and (min-width:320px) and (max-width:720px){
   
 .nav-bar{
   display: flex;
@@ -410,6 +411,8 @@ align-items: center;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 .card-offer {
   display: flex;
@@ -494,5 +497,16 @@ align-items: center;
 }
 .btn-assinatura{
   margin: 0 auto;
+}
+}
+@media screen and (min-width:720px) and (max-width:1220px){
+  .products-content{
+    width: 100%;
+  }
+  .btn-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17rem;
 }
 }
