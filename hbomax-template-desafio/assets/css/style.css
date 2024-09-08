@@ -415,6 +415,23 @@ align-items: center;
   display: flex;
   flex-direction: column;
 }
+
+.card-offer h1{
+  margin-top: 1rem;
+}
+.card-info li {
+  font-size: .8rem;
+}
+.btn-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.assinatura-card {
+  padding: 1rem; 
+}
+.assinatura-anual{
+  margin-top: 1rem;
+}
 .header-container{
  padding: 0;
   width: 100%;
@@ -422,27 +439,14 @@ align-items: center;
 .header__marcas{
   margin-top: 6rem;
 }
-  .header__title, .header__title span, .assinatura__preco, .plano-title, .content-title,.valor, .card-offer h1 {
+.header__title, .header__title span, .assinatura__preco, .plano-title, .content-title,.valor, .card-offer h1 {
     font-size: 1rem;
-}
-.card-offer h1{
-  margin-top: 1rem;
 }
 .plano-title {
   margin-top: 1rem;
 }
-.assinatura-card {
-  padding: 0; 
-}
-.card-info li {
-  font-size: .8rem;
-}
 .btn-assinatura {
   font-size: .5rem;
-}
-.btn-card-info {
-  display: flex;
-  justify-content: space-between;
 }
 .products-content img{
   width: 150px;
@@ -452,10 +456,8 @@ align-items: center;
   display: flex;
   flex-direction: column;
 }
-
 .product{
   width: 150px;
-  
 }
 .underline {
   display: flex;
@@ -475,7 +477,31 @@ align-items: center;
 .footer-list li {
   margin: 1rem;
 }
-.footer-list li a{
+.footer-list li a, .assinatura-anual, .assinatura{
+  display: flex;
+  flex-direction: column;
   font-size: .8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/*login*/
+.input-container input, .login {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.senha-reset{
+  margin: .5rem;
+}
+.main-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1.5rem 0;
+}
+.btn-assinatura{
+  margin: 0 auto;
 }
 }

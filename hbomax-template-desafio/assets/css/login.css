@@ -11,7 +11,6 @@
     align-items: center;
     font-family: "Quicksand", sans-serif;
     width: 100%;
-    height: 65%;
     padding: 20px;
 }
 .login-title{
@@ -40,7 +39,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    width: 700px;
+    width: 100%;
     height: 53px;
     background: var(--form-field-bg-color);
     outline:none ;
