@@ -388,61 +388,94 @@ align-items: center;
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 600px) { 
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 150px;
-    padding: 10px 0;
-    gap: 20px;
- }
- .item-01{
-  margin: 1rem;
- }
- .header-container{
-  display: flex;
-  max-width: 320px;
- }
- .header__marcas{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
   
- }
- .products-content{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.underline{
-  display: flex;
-    background: var(--divider-bg-color);
-    width: 200px;
-    margin: 0 auto;
-}
-.card-offer{
-  justify-content: center;
-  align-items: center;
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+  
+.nav-bar{
   display: flex;
   flex-direction: column;
-  }
-  .header-container{
-    width: 100%;
-    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
-    animation: header-background 9s ease infinite alternate;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+.item-02{
+  margin-top: 1.32rem;
+}
+.item-02 a{
+  font-size: .5rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card-offer {
+  display: flex;
+  flex-direction: column;
+}
+.header-container{
+ padding: 0;
+  width: 100%;
+}
+.header__marcas{
+  margin-top: 6rem;
+}
+  .header__title, .header__title span, .assinatura__preco, .plano-title, .content-title,.valor, .card-offer h1 {
+    font-size: 1rem;
+}
+.card-offer h1{
+  margin-top: 1rem;
+}
+.plano-title {
+  margin-top: 1rem;
+}
+.assinatura-card {
+  padding: 0; 
+}
+.card-info li {
+  font-size: .8rem;
+}
+.btn-assinatura {
+  font-size: .5rem;
+}
+.btn-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.products-content img{
+  width: 150px;
+}
+.products-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-
+.product{
+  width: 150px;
+  
+}
+.underline {
+  display: flex;
+  margin: 0 auto;
+  background: var(--divider-bg-color);
+  width: 60%;
+  height: 4px;
+  border-radius: 17px;
+  padding: 0;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.footer-list li {
+  margin: 1rem;
+}
+.footer-list li a{
+  font-size: .8rem;
+}
 }
