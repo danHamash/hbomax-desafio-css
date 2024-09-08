@@ -416,9 +416,6 @@ align-items: center;
   flex-direction: column;
 }
 
-.card-offer h1{
-  margin-top: 1rem;
-}
 .card-info li {
   font-size: .8rem;
 }
@@ -429,7 +426,7 @@ align-items: center;
 .assinatura-card {
   padding: 1rem; 
 }
-.assinatura-anual{
+.assinatura-anual, .plano-title, .card-offer h1 {
   margin-top: 1rem;
 }
 .header-container{
@@ -442,22 +439,16 @@ align-items: center;
 .header__title, .header__title span, .assinatura__preco, .plano-title, .content-title,.valor, .card-offer h1 {
     font-size: 1rem;
 }
-.plano-title {
-  margin-top: 1rem;
-}
 .btn-assinatura {
   font-size: .5rem;
 }
-.products-content img{
+.products-content img, .product{
   width: 150px;
 }
 .products-content{
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-.product{
-  width: 150px;
 }
 .underline {
   display: flex;
