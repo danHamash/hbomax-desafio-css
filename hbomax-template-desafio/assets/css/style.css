@@ -105,8 +105,11 @@ color: #fff;
     align-items: center;
     text-align: center;
   }
-  .header__marca{
+  .header__content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
   .header__container div, p{
     padding-bottom: 40px;
@@ -255,7 +258,7 @@ align-items: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  gap: 40px;
+  gap: 20px;
 }
 .content-title{
   font-size: 2rem;
@@ -263,12 +266,6 @@ align-items: center;
   text-align: center;
   font-weight: 500;
 }
-.products-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; 
-}
-
 .product {
   position: relative;
   width: 350px; 
@@ -388,4 +385,64 @@ align-items: center;
 100% {
     background-position: 0% 50%;
 }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) { 
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    padding: 10px 0;
+    gap: 20px;
+ }
+ .item-01{
+  margin: 1rem;
+ }
+ .header-container{
+  display: flex;
+  max-width: 320px;
+ }
+ .header__marcas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+ }
+ .products-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.underline{
+  display: flex;
+    background: var(--divider-bg-color);
+    width: 200px;
+    margin: 0 auto;
+}
+.card-offer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  }
+  .header-container{
+    width: 100%;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    animation: header-background 9s ease infinite alternate;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+
 }
