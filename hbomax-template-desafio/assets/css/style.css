@@ -464,9 +464,11 @@ p {
   }
 
   .item-02 a {
-    font-size: .5rem;
+    font-size: .7rem;
   }
-
+  .nav-inscrever{
+    margin: .5rem;
+  }
   .card-container {
     display: flex;
     flex-direction: column;
@@ -481,7 +483,7 @@ p {
   }
 
   .card-info li {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .btn-card-info {
@@ -492,6 +494,9 @@ p {
   .assinatura-card {
     padding: 1rem;
   }
+.assinatura{
+  font-size: 1.25rem;
+}
 
   .assinatura-anual,
   .plano-title,
@@ -510,16 +515,17 @@ p {
 
   .header__title,
   .header__title span,
-  .assinatura__preco,
   .plano-title,
-  .content-title,
+  .content-title{
+    font-size: 2rem;
+  }
   .valor,
   .card-offer h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .btn-assinatura {
-    font-size: .5rem;
+    font-size: .8rem;
   }
 
   .products-content img,
@@ -561,11 +567,10 @@ p {
 }
 
 .footer-list li a,
-.assinatura-anual,
-.assinatura {
+.assinatura-anual{
   display: flex;
   flex-direction: column;
-  font-size: .8rem;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
 }
